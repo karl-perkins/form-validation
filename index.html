@@ -12,33 +12,39 @@
     <form>
       <label for="mail">
         <span>Email</span>
-        <input type="email" name="mail" id="mail" />
-        <span class="error"></span>
+        <input type="email" name="mail" id="mail" required />
       </label>
       <label for="country">
         <span>Country</span>
-        <select name="country" id="country">
+        <select name="country" id="country" required>
           <option value="ch">Switzerland</option>
           <option value="fr">France</option>
           <option value="de">Germany</option>
           <option value="nl">The Netherlands</option>
         </select>
-        <span class="error"></span>
       </label>
-      <label for="zip">
-        <span>Zip Code</span>
-        <input type="text" name="zip" id="zip" />
-        <span class="error"></span>
+      <label for="zip-code">
+        <span>ZIP Code</span>
+        <input type="text" name="zip-code" id="zip-code" required />
       </label>
       <label for="password">
         <span>Password</span>
-        <input type="password" name="password" id="password" />
-        <span class="error"></span>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="8"
+        />
       </label>
       <label for="password-confirm">
         <span>Confirm Password</span>
-        <input type="password" name="password-confirm" id="password-confirm" />
-        <span class="error"></span>
+        <input
+          type="password"
+          name="password-confirm"
+          id="password-confirm"
+          required
+        />
       </label>
       <button type="submit">Submit</button>
     </form>
